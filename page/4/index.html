@@ -123,12 +123,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">17</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">18</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>时间线<span class="badge">33</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>时间线<span class="badge">34</span></a>
 
   </li>
         <li class="menu-item menu-item-notebook">
@@ -184,6 +184,94 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2019/10/14/Ubuntu%E8%B0%83%E6%95%99%E5%8E%86%E7%A8%8B-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/resources/avatar.jpg">
+      <meta itemprop="name" content="MapleWithered">
+      <meta itemprop="description" content="咕！都可以咕！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="枫亚的Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/14/Ubuntu%E8%B0%83%E6%95%99%E5%8E%86%E7%A8%8B-2/" class="post-title-link" itemprop="url">Ubuntu调教历程-2</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-10-14 13:08:02" itemprop="dateCreated datePublished" datetime="2019-10-14T13:08:02+08:00">2019-10-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-09 23:53:11" itemprop="dateModified" datetime="2020-03-09T23:53:11+08:00">2020-03-09</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>609</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="前因后果"><a href="#前因后果" class="headerlink" title="前因后果"></a>前因后果</h2><p>在昨天的培训中，装st-link v2的驱动时手残输入了<code>sudo apt remove libusb-1.0-0</code>，并且没看确认直接Y了。</p>
+<p>等卸载完了之后一看顿时吓出一身冷汗，半个系统被我卸载掉了（这个命令的作用简直不亚于rm rf）。趁内核还没炸赶紧把资料拷了出来重装orz。</p>
+<p>重装的过程依旧很快，很轻松地就完成了（？）。</p>
+<h2 id="sct再次安装"><a href="#sct再次安装" class="headerlink" title="sct再次安装"></a>sct再次安装</h2><p>官方说是要安装libxrandr和libx11，但是在apt里安装了这两个相应的dev软件包后依然提示缺少include文件。遂想起第一次调教时是先装flux再编译的，于是装了flux再编译sct，顺利完成。</p>
+<h2 id="Anyconnect"><a href="#Anyconnect" class="headerlink" title="Anyconnect"></a>Anyconnect</h2><p>第一次折腾时疯狂折腾各种library都依然有问题，这次直接在新系统里使用最新安装包一步到位（难道上一次是我脸黑？vmware也不能安装虚拟网卡T^T）</p>
+<h2 id="Gnome美化"><a href="#Gnome美化" class="headerlink" title="Gnome美化"></a>Gnome美化</h2><p><code>sudo apt install gnome-tweak-tool</code>，安装Sierra-dark主题，顿时拥有了一个暗黑系风格+右上红绿灯按钮。</p>
+<p>安装gnome-shell-extension-dashtodock，获得一个类Mac OS X的dock栏。</p>
+<h2 id="安装字体-VSCode美化"><a href="#安装字体-VSCode美化" class="headerlink" title="安装字体+VSCode美化"></a>安装字体+VSCode美化</h2><p>将Win中字体全部复制并批量安装，vscode中选用如下配置：</p>
+<p><code>&#39;Consolas&#39;, &#39;等线&#39;, monospace, &#39;Droid Sans Fallback&#39;</code></p>
+<p>并将字体粗细设置为<code>400</code>。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -540,14 +628,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">34</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -617,7 +705,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">17k</span>
+    <span title="站点总字数">18k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
