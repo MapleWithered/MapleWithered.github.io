@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>FR126-L17-愈过去时</title>
+    <url>/2020/03/16/FR126-L17-%E6%84%88%E8%BF%87%E5%8E%BB%E6%97%B6/</url>
+    <content><![CDATA[<h2 id="形式"><a href="#形式" class="headerlink" title="形式"></a>形式</h2><table>
+<thead>
+<tr>
+<th>人称</th>
+<th>助动词</th>
+<th>分词</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>j’</td>
+<td>avais</td>
+<td>parlé</td>
+</tr>
+<tr>
+<td>tu</td>
+<td>avais</td>
+<td>parlé</td>
+</tr>
+<tr>
+<td>il</td>
+<td>avait</td>
+<td>parlé</td>
+</tr>
+<tr>
+<td>nous</td>
+<td>avions</td>
+<td>parlé</td>
+</tr>
+<tr>
+<td>vous</td>
+<td>aviez</td>
+<td>parlé</td>
+</tr>
+<tr>
+<td>ils</td>
+<td>avaient</td>
+<td>parlé</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>人称</th>
+<th>助动词</th>
+<th>分词</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>j’</td>
+<td>étais</td>
+<td>venu(e)</td>
+</tr>
+<tr>
+<td>tu</td>
+<td>étais</td>
+<td>venu(e)</td>
+</tr>
+<tr>
+<td>il</td>
+<td>était</td>
+<td>venu</td>
+</tr>
+<tr>
+<td>nous</td>
+<td>étions</td>
+<td>venu(e)s</td>
+</tr>
+<tr>
+<td>vous</td>
+<td>étiez</td>
+<td>venu(e)(s)</td>
+</tr>
+<tr>
+<td>ils</td>
+<td>étaient</td>
+<td>venus</td>
+</tr>
+</tbody></table>
+<p>即，把P.C.的助动词变为IMP词型，配合不变。</p>
+]]></content>
+      <tags>
+        <tag>法语</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MA159-4.2-连续性</title>
+    <url>/2020/03/15/MA159-4-2-%E8%BF%9E%E7%BB%AD%E6%80%A7/</url>
+    <content><![CDATA[<h2 id="连续性定义"><a href="#连续性定义" class="headerlink" title="连续性定义"></a>连续性定义</h2><h3 id="函数在一点上的连续性"><a href="#函数在一点上的连续性" class="headerlink" title="函数在一点上的连续性"></a>函数在一点上的连续性</h3><p>$$<br>f(x_0) = \lim_{x \to x_0}{f(x)}<br>$$</p>
+<h3 id="函数在区间内的连续性"><a href="#函数在区间内的连续性" class="headerlink" title="函数在区间内的连续性"></a>函数在区间内的连续性</h3><p>$$<br>\forall x_0 \in A, f(x_0) = \lim_{x \to x_0}{f(x)}<br>$$</p>
+<p>（$A$区间内的每一点均连续）</p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MA159-4.1-极限性质II</title>
+    <url>/2020/03/15/MA159-4-1-%E6%9E%81%E9%99%90%E6%80%A7%E8%B4%A8II/</url>
+    <content><![CDATA[<h2 id="极限-与-不等号"><a href="#极限-与-不等号" class="headerlink" title="极限 与 不等号"></a>极限 与 不等号</h2><p>$\forall x\in I,f(x)\leq g(x)\Rightarrow \lim{f(x)}\leq\lim{g(x)}$</p>
+<p>$\forall x\in I,f(x)\ {\color{red} &lt;}\ g(x)\Rightarrow \lim{f(x)}\leq\lim{g(x)}$</p>
+<p>$\forall x\in I,f(x)\leq g(x)\leq h(x), \lim{f(x)}=\lim{h(x)} \Rightarrow \lim{f(x)}=\lim{g(x)}=\lim{h(x)}$</p>
+<h2 id="极限-与-单调性"><a href="#极限-与-单调性" class="headerlink" title="极限 与 单调性"></a>极限 与 单调性</h2><p>$\forall x\in I, m\leq f(x)\leq N\Rightarrow m\leq\lim{f(x)}\leq n$</p>
+<p>单调函数定义域内有左右极限。</p>
+]]></content>
+      <tags>
+        <tag>笔记</tag>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>离ddl最近的一次</title>
     <url>/2020/03/15/%E7%A6%BBddl%E6%9C%80%E8%BF%91%E7%9A%84%E4%B8%80%E6%AC%A1/</url>
     <content><![CDATA[<p>0430睡的觉，一觉睡到1430，现在是1515，ddl在1800。</p>
@@ -74,9 +188,15 @@
       </tags>
   </entry>
   <entry>
-    <title>MA159-3-极限性质</title>
+    <title>MA159-3-极限性质I</title>
     <url>/2020/03/09/MA159-3-%E6%9E%81%E9%99%90%E6%80%A7%E8%B4%A8/</url>
-    <content><![CDATA[<h2 id="极限的唯一性"><a href="#极限的唯一性" class="headerlink" title="极限的唯一性"></a>极限的唯一性</h2>]]></content>
+    <content><![CDATA[<h2 id="极限的唯一性"><a href="#极限的唯一性" class="headerlink" title="极限的唯一性"></a>极限的唯一性</h2><p>极限是唯一的。</p>
+<p>证明：反证法设有两个不同极限，然后证明此时不能任意取 $\varepsilon$ 即可（举 $\varepsilon$ 的反例）。</p>
+<h2 id="极限的运算性质"><a href="#极限的运算性质" class="headerlink" title="极限的运算性质"></a>极限的运算性质</h2><p>加减乘除直接算，注意正负号的影响以及0的影响</p>
+<p>复合函数简单复合。（证明直接两个eta-epsilon然后再取个min的eta套起来）</p>
+<h2 id="左极限-右极限"><a href="#左极限-右极限" class="headerlink" title="左极限 右极限"></a>左极限 右极限</h2><p>将eta(x)的那步绝对值变成单侧逼近即可。</p>
+<h2 id="分式-极限计算法则"><a href="#分式-极限计算法则" class="headerlink" title="分式 极限计算法则"></a>分式 极限计算法则</h2><p>分母最高次项除以分子最高次项即可。</p>
+]]></content>
       <tags>
         <tag>笔记</tag>
         <tag>数学</tag>
@@ -505,7 +625,7 @@
 <p><a name="e3f63dc0"></a></p>
 <h2 id="连续性定义"><a href="#连续性定义" class="headerlink" title="连续性定义"></a>连续性定义</h2><h3 id="函数在一点上的连续性"><a href="#函数在一点上的连续性" class="headerlink" title="函数在一点上的连续性"></a>函数在一点上的连续性</h3><p>$$<br>f(x_0) = \lim_{x \to x_0}{f(x)}<br>$$</p>
 <h3 id="函数在区间内的连续性"><a href="#函数在区间内的连续性" class="headerlink" title="函数在区间内的连续性"></a>函数在区间内的连续性</h3><p>$$<br>\forall x_0 \in A, f(x_0) = \lim_{x \to x_0}{f(x)}<br>$$</p>
-<p>（$A$区间内的每一点均连续）w玮</p>
+<p>（$A$区间内的每一点均连续）</p>
 ]]></content>
       <tags>
         <tag>笔记</tag>
