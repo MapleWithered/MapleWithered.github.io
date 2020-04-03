@@ -128,7 +128,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>时间线<span class="badge">47</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>时间线<span class="badge">48</span></a>
 
   </li>
         <li class="menu-item menu-item-notebook">
@@ -184,6 +184,111 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2020/04/03/%E7%94%B5%E6%B5%81%E6%BA%90%E4%B8%B2%E8%81%94%E7%94%B5%E6%84%9F%E7%9A%84%E6%83%85%E5%86%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/resources/avatar.jpg">
+      <meta itemprop="name" content="MapleWithered">
+      <meta itemprop="description" content="咕！都可以咕！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="枫亚的Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/03/%E7%94%B5%E6%B5%81%E6%BA%90%E4%B8%B2%E8%81%94%E7%94%B5%E6%84%9F%E7%9A%84%E6%83%85%E5%86%B5/" class="post-title-link" itemprop="url">电流源串联电感的情况</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-03 14:01:15 / 修改时间：14:12:55" itemprop="dateCreated datePublished" datetime="2020-04-03T14:01:15+08:00">2020-04-03</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>604</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>电流源可以串联电感吗？</p>
+<p>如果是一个交流但是频率不是很高的交流电流源与电感串联，那么具体的过程应该怎么去分析？</p>
+<p>这时 KCL 与KVL 成立吗？</p>
+<p>另外两个电压源并联会出现什么情况？</p>
+<p>两个电流源串联会出现什么情况？</p>
+<p>最主要的是 KCL 是否成立？</p>
+<p>电流源的电流应该是恒定的，但是串联的电感又会起到阻碍的作用，那么电流就变成不是恒定的。</p>
+<p>这应该怎么来解释？</p>
+<h2 id="回答1"><a href="#回答1" class="headerlink" title="回答1"></a>回答1</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><h4 id="a"><a href="#a" class="headerlink" title="a"></a>a</h4><p>如果是稳态的话，电流源是可以直接接在电感上面的。</p>
+<p>如果是直流，电压为0，电流=电流源。</p>
+<p>如果是交流，电流=电流源，电压=I*jwL。</p>
+<p> KCL 与KVL 成立。</p>
+<h4 id="b"><a href="#b" class="headerlink" title="b"></a>b</h4><p>如果是动态的话，显然是无法实现的，你不可能在电流源上面加个开关。</p>
+<p>系统仿真也是会出错。</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>两个电压源如果电压不等是无法并联的。</p>
+<p>并联的结果是，两者端电压相等。</p>
+<p>显然，这样会烧坏电压源。</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>两个电流源如果电流不等也是无法并联。</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>在稳态的情况下，KCL 成立。</p>
+<p>电流源的电流正因为是恒定的，所以无论串联的电感有多大的阻碍作用，电流源也能始终保持电流恒定，电压=I*jwL，总归有个值，而不是无穷大。</p>
+<h3 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h3><p>我想你应该是大学电路课程吧。</p>
+<p>你考虑得太多了，我们通常分析的无非就这么三个方面：直流稳态，直流动态和交流稳态。</p>
+<p>至于交流的动态，要结合实际了，因为没有不带内阻的电源，没有不带阻值的电感，电容。</p>
+<h2 id="回答2"><a href="#回答2" class="headerlink" title="回答2"></a>回答2</h2><ol>
+<li><p>按照电流源输出特性来分析，都是成立的。</p>
+</li>
+<li><p>短路，除非电动势完全一样。</p>
+</li>
+<li><p>理想电流源会出现端电压无限大（当然现实不会发生，放电了）。</p>
+</li>
+</ol>
+<hr>
+<p>摘自百度知道：<a href="https://zhidao.baidu.com/question/208710147.html?qbl=relate_question_1" target="_blank" rel="noopener">地址</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -928,157 +1033,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2020/03/16/FR126-L17-%E6%84%88%E8%BF%87%E5%8E%BB%E6%97%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/resources/avatar.jpg">
-      <meta itemprop="name" content="MapleWithered">
-      <meta itemprop="description" content="咕！都可以咕！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="枫亚的Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/16/FR126-L17-%E6%84%88%E8%BF%87%E5%8E%BB%E6%97%B6/" class="post-title-link" itemprop="url">FR126-L17-愈过去时</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-16 10:55:39 / 修改时间：13:40:40" itemprop="dateCreated datePublished" datetime="2020-03-16T10:55:39+08:00">2020-03-16</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>211</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="形式"><a href="#形式" class="headerlink" title="形式"></a>形式</h2><table>
-<thead>
-<tr>
-<th>人称</th>
-<th>助动词</th>
-<th>分词</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>j’</td>
-<td>avais</td>
-<td>parlé</td>
-</tr>
-<tr>
-<td>tu</td>
-<td>avais</td>
-<td>parlé</td>
-</tr>
-<tr>
-<td>il</td>
-<td>avait</td>
-<td>parlé</td>
-</tr>
-<tr>
-<td>nous</td>
-<td>avions</td>
-<td>parlé</td>
-</tr>
-<tr>
-<td>vous</td>
-<td>aviez</td>
-<td>parlé</td>
-</tr>
-<tr>
-<td>ils</td>
-<td>avaient</td>
-<td>parlé</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>人称</th>
-<th>助动词</th>
-<th>分词</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>j’</td>
-<td>étais</td>
-<td>venu(e)</td>
-</tr>
-<tr>
-<td>tu</td>
-<td>étais</td>
-<td>venu(e)</td>
-</tr>
-<tr>
-<td>il</td>
-<td>était</td>
-<td>venu</td>
-</tr>
-<tr>
-<td>nous</td>
-<td>étions</td>
-<td>venu(e)s</td>
-</tr>
-<tr>
-<td>vous</td>
-<td>étiez</td>
-<td>venu(e)(s)</td>
-</tr>
-<tr>
-<td>ils</td>
-<td>étaient</td>
-<td>venus</td>
-</tr>
-</tbody></table>
-<p>即，把P.C.的助动词变为IMP词型，配合不变。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1151,7 +1105,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">47</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1228,13 +1182,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">20k</span>
+    <span title="站点总字数">21k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">18 分钟</span>
+    <span title="站点阅读时长">19 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
