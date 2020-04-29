@@ -22,22 +22,20 @@
     var CONFIG = {"hostname":"oreste.moe","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="问题电流源可以串联电感吗？ 如果是一个交流但是频率不是很高的交流电流源与电感串联，那么具体的过程应该怎么去分析？ 这时 KCL 与KVL 成立吗？ 另外两个电压源并联会出现什么情况？ 两个电流源串联会出现什么情况？ 最主要的是 KCL 是否成立？ 电流源的电流应该是恒定的，但是串联的电感又会起到阻碍的作用，那么电流就变成不是恒定的。 这应该怎么来解释？ 回答11a如果是稳态的话，电流源是可以直接接">
+  <meta name="description" content="BV16i4y1t7WW">
 <meta property="og:type" content="article">
-<meta property="og:title" content="电流源串联电感的情况">
-<meta property="og:url" content="https://oreste.moe/2020/04/03/%E7%94%B5%E6%B5%81%E6%BA%90%E4%B8%B2%E8%81%94%E7%94%B5%E6%84%9F%E7%9A%84%E6%83%85%E5%86%B5/index.html">
+<meta property="og:title" content="蛮可的一个伪声教程">
+<meta property="og:url" content="https://oreste.moe/2020/04/29/%E8%9B%AE%E5%8F%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BC%AA%E5%A3%B0%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="枫亚的Blog">
-<meta property="og:description" content="问题电流源可以串联电感吗？ 如果是一个交流但是频率不是很高的交流电流源与电感串联，那么具体的过程应该怎么去分析？ 这时 KCL 与KVL 成立吗？ 另外两个电压源并联会出现什么情况？ 两个电流源串联会出现什么情况？ 最主要的是 KCL 是否成立？ 电流源的电流应该是恒定的，但是串联的电感又会起到阻碍的作用，那么电流就变成不是恒定的。 这应该怎么来解释？ 回答11a如果是稳态的话，电流源是可以直接接">
+<meta property="og:description" content="BV16i4y1t7WW">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-03T06:01:15.000Z">
-<meta property="article:modified_time" content="2020-04-03T06:12:55.124Z">
+<meta property="article:published_time" content="2020-04-29T03:45:41.000Z">
+<meta property="article:modified_time" content="2020-04-29T03:47:25.368Z">
 <meta property="article:author" content="MapleWithered">
-<meta property="article:tag" content="学习">
-<meta property="article:tag" content="笔记">
-<meta property="article:tag" content="物理">
+<meta property="article:tag" content="伪声">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://oreste.moe/2020/04/03/%E7%94%B5%E6%B5%81%E6%BA%90%E4%B8%B2%E8%81%94%E7%94%B5%E6%84%9F%E7%9A%84%E6%83%85%E5%86%B5/">
+<link rel="canonical" href="https://oreste.moe/2020/04/29/%E8%9B%AE%E5%8F%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BC%AA%E5%A3%B0%E6%95%99%E7%A8%8B/">
 
 
 <script id="page-configurations">
@@ -49,7 +47,7 @@
   };
 </script>
 
-  <title>电流源串联电感的情况 | 枫亚的Blog</title>
+  <title>蛮可的一个伪声教程 | 枫亚的Blog</title>
   
 
 
@@ -192,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2020/04/03/%E7%94%B5%E6%B5%81%E6%BA%90%E4%B8%B2%E8%81%94%E7%94%B5%E6%84%9F%E7%9A%84%E6%83%85%E5%86%B5/">
+    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2020/04/29/%E8%9B%AE%E5%8F%AF%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BC%AA%E5%A3%B0%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/resources/avatar.jpg">
@@ -205,7 +203,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          电流源串联电感的情况
+          蛮可的一个伪声教程
         </h2>
 
         <div class="post-meta">
@@ -216,7 +214,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-03 14:01:15 / 修改时间：14:12:55" itemprop="dateCreated datePublished" datetime="2020-04-03T14:01:15+08:00">2020-04-03</time>
+              <time title="创建时间：2020-04-29 11:45:41 / 修改时间：11:47:25" itemprop="dateCreated datePublished" datetime="2020-04-29T11:45:41+08:00">2020-04-29</time>
             </span>
 
           <br>
@@ -225,7 +223,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>604</span>
+              <span>12</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -244,39 +242,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>电流源可以串联电感吗？</p>
-<p>如果是一个交流但是频率不是很高的交流电流源与电感串联，那么具体的过程应该怎么去分析？</p>
-<p>这时 KCL 与KVL 成立吗？</p>
-<p>另外两个电压源并联会出现什么情况？</p>
-<p>两个电流源串联会出现什么情况？</p>
-<p>最主要的是 KCL 是否成立？</p>
-<p>电流源的电流应该是恒定的，但是串联的电感又会起到阻碍的作用，那么电流就变成不是恒定的。</p>
-<p>这应该怎么来解释？</p>
-<h2 id="回答1"><a href="#回答1" class="headerlink" title="回答1"></a>回答1</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><h4 id="a"><a href="#a" class="headerlink" title="a"></a>a</h4><p>如果是稳态的话，电流源是可以直接接在电感上面的。</p>
-<p>如果是直流，电压为0，电流=电流源。</p>
-<p>如果是交流，电流=电流源，电压=I*jwL。</p>
-<p> KCL 与KVL 成立。</p>
-<h4 id="b"><a href="#b" class="headerlink" title="b"></a>b</h4><p>如果是动态的话，显然是无法实现的，你不可能在电流源上面加个开关。</p>
-<p>系统仿真也是会出错。</p>
-<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>两个电压源如果电压不等是无法并联的。</p>
-<p>并联的结果是，两者端电压相等。</p>
-<p>显然，这样会烧坏电压源。</p>
-<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>两个电流源如果电流不等也是无法并联。</p>
-<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>在稳态的情况下，KCL 成立。</p>
-<p>电流源的电流正因为是恒定的，所以无论串联的电感有多大的阻碍作用，电流源也能始终保持电流恒定，电压=I*jwL，总归有个值，而不是无穷大。</p>
-<h3 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h3><p>我想你应该是大学电路课程吧。</p>
-<p>你考虑得太多了，我们通常分析的无非就这么三个方面：直流稳态，直流动态和交流稳态。</p>
-<p>至于交流的动态，要结合实际了，因为没有不带内阻的电源，没有不带阻值的电感，电容。</p>
-<h2 id="回答2"><a href="#回答2" class="headerlink" title="回答2"></a>回答2</h2><ol>
-<li><p>按照电流源输出特性来分析，都是成立的。</p>
-</li>
-<li><p>短路，除非电动势完全一样。</p>
-</li>
-<li><p>理想电流源会出现端电压无限大（当然现实不会发生，放电了）。</p>
-</li>
-</ol>
-<hr>
-<p>摘自百度知道：<a href="https://zhidao.baidu.com/question/208710147.html?qbl=relate_question_1" target="_blank" rel="noopener">地址</a></p>
+        <p>BV16i4y1t7WW</p>
 
     </div>
 
@@ -286,9 +252,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
-              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
-              <a href="/tags/%E7%89%A9%E7%90%86/" rel="tag"># 物理</a>
+              <a href="/tags/%E4%BC%AA%E5%A3%B0/" rel="tag"># 伪声</a>
           </div>
 
         
@@ -302,13 +266,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/27/%E5%A5%BD%E6%83%B3%E4%BC%91%E6%81%AF/" rel="prev" title="好想休息">
-      <i class="fa fa-chevron-left"></i> 好想休息
+    <a href="/2020/04/25/%E7%9C%8B%E8%BF%87%E7%9A%84%E7%95%AA/" rel="prev" title="看过的番">
+      <i class="fa fa-chevron-left"></i> 看过的番
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/04/06/%E6%91%98%E6%8A%84%EF%BC%9A%E5%A6%82%E4%BD%95%E7%BC%A9%E7%9F%AD%E7%9D%A1%E7%9C%A0%E6%97%B6%E9%97%B4%EF%BC%9F/" rel="next" title="摘抄：如何缩短睡眠时间？">
-      摘抄：如何缩短睡眠时间？ <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -368,7 +329,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回答1"><span class="nav-number">2.</span> <span class="nav-text">回答1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a"><span class="nav-number">2.1.1.</span> <span class="nav-text">a</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b"><span class="nav-number">2.1.2.</span> <span class="nav-text">b</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">2.2.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">2.3.</span> <span class="nav-text">3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4"><span class="nav-number">2.4.</span> <span class="nav-text">4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PS"><span class="nav-number">2.5.</span> <span class="nav-text">PS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回答2"><span class="nav-number">3.</span> <span class="nav-text">回答2</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
