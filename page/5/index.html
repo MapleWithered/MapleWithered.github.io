@@ -128,7 +128,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>时间线<span class="badge">57</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>时间线<span class="badge">58</span></a>
 
   </li>
         <li class="menu-item menu-item-notebook">
@@ -184,6 +184,129 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2020/02/24/%E5%8F%AF%E6%B1%97-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E6%9E%81%E9%99%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/resources/avatar.jpg">
+      <meta itemprop="name" content="MapleWithered">
+      <meta itemprop="description" content="咕！都可以咕！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="枫亚的Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/24/%E5%8F%AF%E6%B1%97-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E6%9E%81%E9%99%90/" class="post-title-link" itemprop="url">可汗-导数与微分-极限</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-24 23:16:24" itemprop="dateCreated datePublished" datetime="2020-02-24T23:16:24+08:00">2020-02-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-09 23:53:13" itemprop="dateModified" datetime="2020-03-09T23:53:13+08:00">2020-03-09</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a name="364d514b"></a></p>
+<h2 id="极限：无限趋近"><a href="#极限：无限趋近" class="headerlink" title="极限：无限趋近"></a>极限：无限趋近</h2><p>求极限：求函数在无限趋近某横坐标时纵坐标所趋近的值，无论该横坐标是否undefined。</p>
+<p><a name="6631920d"></a></p>
+<h2 id="极限存在的条件"><a href="#极限存在的条件" class="headerlink" title="极限存在的条件"></a>极限存在的条件</h2><p>$$<br>\lim_{x \to c^-}{f(x)} = \lim_{x \to c^+}{f(x)}<br>$$</p>
+<p>（左右极限相等）</p>
+<p><a name="ebf5b24c"></a></p>
+<h2 id="极限定义-Delta-epsilon"><a href="#极限定义-Delta-epsilon" class="headerlink" title="极限定义(Delta-epsilon)"></a>极限定义(Delta-epsilon)</h2><p>若有</p>
+<p>$$\lim_{x \to a}{f(x)} = L$$</p>
+<p>则</p>
+<p>$$\forall \epsilon &gt; 0, \exists \delta &gt; 0, 0&lt;|x-a|&lt;\delta \Rightarrow  a, |f(x)-L|&lt;\epsilon$$</p>
+<h3 id="阐述"><a href="#阐述" class="headerlink" title="阐述"></a>阐述</h3><p>$\epsilon$ ：y上的tolerance区间</p>
+<p>$\delta$ ：x上的tolerance区间</p>
+<p>已知极限坐标 $(a, L)$ ，那么随便给任意小的 $\epsilon$ 区间，都能找到相应的 $\delta$ 区间，使得 $f(\delta)$ 在 $\epsilon$ 内部。</p>
+<p><a name="905a8a5f"></a></p>
+<h2 id="极限的运算法则"><a href="#极限的运算法则" class="headerlink" title="极限的运算法则"></a>极限的运算法则</h2><p>$$<br>\lim_{x \to c}{(f(x)\pm g(x))} = \lim_{x \to c}{f(x)}\pm\lim_{x \to c}{g(x)}<br>$$</p>
+<p>$$<br>\lim_{x \to c}{(f(x)\times g(x))} = \lim_{x \to c}{f(x)}\times\lim_{x \to c}{g(x)}<br>$$</p>
+<p>$$<br>\lim_{x \to c}{(f(x)\div g(x))} = \lim_{x \to c}{f(x)}\div\lim_{x \to c}{g(x)}<br>$$</p>
+<p>$$<br>\lim_{x \to c}{(k \times f(x))} = k \times \lim_{x \to c}{f(x)}<br>$$</p>
+<p>$$<br>\lim_{x \to c}{(f(x)^\frac{r}{s})} = (\lim_{x \to c}{f(x)})^\frac{r}{s}<br>$$</p>
+<p>复合函数先求里层极限再求外层极限</p>
+<p><a name="5773221c"></a></p>
+<h2 id="求极限的方法"><a href="#求极限的方法" class="headerlink" title="求极限的方法"></a>求极限的方法</h2>
+
+<p><a name="86f3f790"></a></p>
+<h2 id="夹逼定理（三明治定理）"><a href="#夹逼定理（三明治定理）" class="headerlink" title="夹逼定理（三明治定理）"></a>夹逼定理（三明治定理）</h2><p>$$\lim_{x \to 0}{\frac{\sin{x}}{x}} = 1$$</p>
+<p>证明方法 ↑ ：单位圆tan线三角&gt;扇形&gt;单位圆sin线三角</p>
+<p>$$<br>\lim_{x \to 0}{\frac{1-\cos{x}}{x}} = 0<br>$$</p>
+<p>证明方法 ↑ ：上下乘 $1+\cos{x}$，化简后代入 $\lim_{x \to 0}{\frac{\sin{x}}{x}} = 1$，剩余项代入0直接求值。</p>
+<p><a name="90474e48"></a></p>
+<h2 id="无穷处的极限求值"><a href="#无穷处的极限求值" class="headerlink" title="无穷处的极限求值"></a>无穷处的极限求值</h2><ol>
+<li><p>多项式分式（包括根号分式在内）：同除 $x^a$ ，化简为仅保留 $\frac{1}{x^n}$ 的形式。<strong>注意正负号</strong></p>
+</li>
+<li><p>仅分子含三角的分式，可用三明治定理证明无穷处的极限（$[-1,1]$）。</p>
+</li>
+<li><p>仅分母含三角的分式，可考虑极限不存在（分母为0的情况）</p>
+</li>
+</ol>
+<p><a name="91062e0d"></a></p>
+<h2 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理"></a>中值定理</h2><p>函数 $f(x)$ 在区间 $x\in [a, b]$ 上连续，则：</p>
+<ol>
+<li><p>$f(x)$ 会取到 $[f(a), f(b)]$ 之间所有的值</p>
+</li>
+<li><p>$\forall L\in [f(a), f(b)],\ \  \exists c\in [a, b],\ \  f(c)=L.$</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -1192,85 +1315,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://oreste.moe/2019/12/12/%E9%9A%8F%E6%83%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/resources/avatar.jpg">
-      <meta itemprop="name" content="MapleWithered">
-      <meta itemprop="description" content="咕！都可以咕！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="枫亚的Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/12/%E9%9A%8F%E6%83%B3/" class="post-title-link" itemprop="url">随想</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-12-12 09:16:31" itemprop="dateCreated datePublished" datetime="2019-12-12T09:16:31+08:00">2019-12-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-09 23:53:12" itemprop="dateModified" datetime="2020-03-09T23:53:12+08:00">2020-03-09</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>22</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>我从何而来，为何而来；又如何前进，去往何方？</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1343,7 +1387,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">58</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1508,6 +1552,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
